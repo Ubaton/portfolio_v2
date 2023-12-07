@@ -2,7 +2,9 @@ import Image from "next/image";
 import React from "react";
 import Statue from "../../../public/images/Statue.png";
 import Header from "@/pages/Header/Header";
-import Name from "../Text/Name";
+import Name from "../Links/Name";
+import Profile from "../Links/Profile";
+import Work from "../Links/Work";
 
 const Background = () => {
   return (
@@ -17,6 +19,8 @@ const Background = () => {
       >
         <div>
           <Name />
+          <Profile />
+          <Work />
           <Header />
         </div>
       </div>
