@@ -5,6 +5,7 @@ import Header from "@/pages/Header/Header";
 import Name from "../Links/Name";
 import Profile from "../Links/Profile";
 import Work from "../Links/Work";
+import Social from "../Links/Social";
 
 const Background = () => {
   return (
@@ -22,6 +23,7 @@ const Background = () => {
           <Profile />
           <Work />
           <Header />
+          <Social />
         </div>
       </div>
     </div>
