@@ -81,36 +81,38 @@ const ProfilePage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 space-x-0">
-            <div className="px-12 p-4">
-              <h2 className="text-2xl font-bold">Skills</h2>
-              <p>Figma Design & Prototyping</p>
-              <p>Adobe PhotoShop</p>
-              <p>Adobe Illustrator</p>
-              <p>Blender</p>
+          <div className="px-8">
+            <div className="grid grid-cols-1 md:grid-cols-3">
+              <div className="px-12 p-4">
+                <h2 className="text-2xl font-bold">Skills</h2>
+                <p>Figma Design & Prototyping</p>
+                <p>Adobe PhotoShop (Photo munipulation)</p>
+                <p>Adobe Illustrator (Logo/Customer Style shapes)</p>
+                <p>Blender (Creating 3D OBJ)</p>
+              </div>
+              <div className="px-12 p-4">
+                <h2 className="text-2xl font-bold">JavaScript Framework</h2>
+                <p>React JS</p>
+                <p>Next Js</p>
+                <p>React Native</p>
+                <p>Vue JS</p>
+              </div>
             </div>
-            <div className="px-12 p-4">
-              <h2 className="text-2xl font-bold">Skills</h2>
-              <p>Figma Design & Prototyping</p>
-              <p>Adobe PhotoShop</p>
-              <p>Adobe Illustrator</p>
-              <p>Blender</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="px-12 p-4">
-              <h2 className="text-2xl font-bold">Skills</h2>
-              <p>Figma Design & Prototyping</p>
-              <p>Adobe PhotoShop</p>
-              <p>Adobe Illustrator</p>
-              <p>Blender</p>
-            </div>
-            <div className="px-12 p-4">
-              <h2 className="text-2xl font-bold">Skills</h2>
-              <p>Figma Design & Prototyping</p>
-              <p>Adobe PhotoShop</p>
-              <p>Adobe Illustrator</p>
-              <p>Blender</p>
+            <div className="grid grid-cols-1 md:grid-cols-3">
+              <div className="px-12 p-4">
+                <h2 className="text-2xl font-bold">Tools</h2>
+                <p>VS Code</p>
+                <p>Sublime Text</p>
+                <p>MySQL Workbench</p>
+                <p>MongoDB</p>
+              </div>
+              <div className="px-12 p-4">
+                <h2 className="text-2xl font-bold">Programing Laugauge</h2>
+                <p>Python</p>
+                <p>JavaScript</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
             </div>
           </div>
         </div>
