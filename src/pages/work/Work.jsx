@@ -1,11 +1,15 @@
-import { useRouter } from "next/router";
-import { getProjectData } from "./slug";
+import Profile from "@/components/Links/Profile";
+import { useRouter } from "next/navigation";
 
-const Work = ({ vercelData, githubData }) => {
+const WorkPage = ({ vercelData, githubData }) => {
   // Your component code here, using vercelData and githubData
   // You can display the project details or perform any other actions.
 
-  return <div>My UI</div>;
+  return (
+    <div>
+      <Profile />
+    </div>
+  );
 };
 
 export async function getServerSideProps({ params }) {
@@ -20,4 +24,4 @@ export async function getServerSideProps({ params }) {
   };
 }
 
-export default Work;
+export default WorkPage;

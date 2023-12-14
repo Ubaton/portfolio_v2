@@ -11,8 +11,6 @@ const Header = () => {
           Building digital solutions for your business
         </p>
       </section>
-      <div></div>
-      <div></div>
     </div>
   );
 };
