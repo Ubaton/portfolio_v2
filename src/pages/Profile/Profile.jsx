@@ -14,6 +14,7 @@ const ProfilePage = () => {
           backgroundPosition: "center",
           height: "100vh",
         }}
+        alt="Statue"
       >
         <div className="pt-8 text-gray-50 text-sm">
           <div className="pb-8 px-11">

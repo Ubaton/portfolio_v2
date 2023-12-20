@@ -17,6 +17,7 @@ const Background = () => {
           backgroundPosition: "center",
           height: "100vh",
         }}
+        alt="Statue"
       >
         <div>
           <Name />
