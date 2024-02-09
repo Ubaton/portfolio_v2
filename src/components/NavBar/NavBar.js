@@ -1,11 +1,24 @@
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 import Logo from "./Logo";
+import { GithubIcon, LinkedInIcon, TwitterIcon } from "../icons/icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
+  const router = useRouter();
+
   return (
-    <Link href={href} className={`${className}`}>
-      {title}
+    <Link href={href}>
+      <div className={`${className} relative group`}>
+        {title}
+        <span
+          className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
+            router.asPath === href ? "w-full" : "w-0"
+          }`}
+        >
+          &nbsp;
+        </span>
+      </div>
     </Link>
   );
 };
@@ -13,38 +26,52 @@ const CustomLink = ({ href, title, className = "" }) => {
 const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
-      <nav>
+      <nav className="flex items-center justify-center">
         <CustomLink href="/" title="Home" className="mr-4" />
-
-        <CustomLink href="/about" title="About" className="mr-4" />
-
-        <CustomLink href="/projects" title="Projects" className="mr-4" />
-
-        <CustomLink href="/articles" title="Articles" className="mr-4" />
+        <CustomLink href="/about" title="About" className="mx-4" />
+        <CustomLink href="/projects" title="Projects" className="mx-4" />
+        <CustomLink href="/articles" title="Articles" className="ml-4" />
       </nav>
 
-      <nav>
-        <Link href="/twitter" alt="" target={"_blank"}>
-          twitter
-        </Link>
-        <Link href="/instrgram" alt="" target={"_blank"}>
-          instrgram
-        </Link>
-        <Link href="/facebook" alt="" target={"_blank"}>
-          facebook
-        </Link>
-        <Link href="/github" alt="" target={"_blank"}>
-          github
-        </Link>
-        <Link href="/youtube" alt="" target={"_blank"}>
-          youtube
-        </Link>
-        <Link href="/whatsapp" alt="" target={"_blank"}>
-          whatsapp
-        </Link>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="/tw"
+          alt=""
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mr-3"
+        >
+          <TwitterIcon />
+        </motion.a>
+
+        <motion.a
+          href="/github"
+          alt=""
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
+          <GithubIcon />
+        </motion.a>
+
+        <motion.a
+          href="/whatsapp"
+          alt=""
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 ml-3"
+        >
+          <LinkedInIcon />
+        </motion.a>
       </nav>
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-2">
         <Logo />
       </div>
     </header>
