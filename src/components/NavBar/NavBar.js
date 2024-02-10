@@ -35,7 +35,7 @@ const NavBar = () => {
 
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="/tw"
+          href="https://twitter.com/_GoldManRay"
           alt=""
           target="_blank"
           rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const NavBar = () => {
         </motion.a>
 
         <motion.a
-          href="/github"
+          href="https://github.com/Ubaton"
           alt=""
           target="_blank"
           rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const NavBar = () => {
         </motion.a>
 
         <motion.a
-          href="/whatsapp"
+          href="https://www.linkedin.com/in/raymond-ngobeni-b7ab26163/"
           alt=""
           target="_blank"
           rel="noopener noreferrer"

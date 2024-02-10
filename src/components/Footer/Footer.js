@@ -12,11 +12,7 @@ const Footer = () => {
             Build with{" "}
             <span className="text-primary text-2xl px-1">&#9825;</span>
             by&nbsp;
-            <Link
-              href="/Raymond"
-              target={"_blank"}
-              className="underline underline-offset-2"
-            >
+            <Link href="/Raymond" target={"_blank"} className="font-bold">
               Raymond Ngobeni
             </Link>
           </div>

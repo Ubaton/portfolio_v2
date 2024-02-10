@@ -52,7 +52,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="mailto:mrrngobeni6@gmail.com"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-dark p-2.5 px-6 rounded-lg border-2 border-solid border-gray-500 hover:border-dark hover:bg-dark hover:text-light"
                 >
                   Contact
                 </Link>
