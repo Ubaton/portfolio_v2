@@ -53,22 +53,22 @@ const about = () => {
               </h2>
 
               <p className="font-medium">
-                Hi, I'm Raymond Ngobeni, a Web developer and UI/UX designer with
-                a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                Hi, I&apos;m Raymond Ngobeni, a Software developer and UI/UX
+                designer with a passion for creating beautiful, functional, and
+                user-centered digital experiences. With 4 years of experience in
+                the field. I am always looking for new and innovative ways to
+                bring my clients' visions to life.
               </p>
 
               <p className="font-medium my-4">
                 I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                pretty – it&apos;s about solving problems and creating
+                intuitive, enjoyable experiences for users.
               </p>
 
               <p className="font-medium">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
+                Whether I&apos;m working on a website, mobile app, or other
+                digital product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to
                 your next project.
@@ -82,6 +82,16 @@ const about = () => {
                 alt="Raymond Ngobeni"
                 className="w-full h-auto rounded-lg"
               />
+              <h3 className="pt-4 font-semibold text-dark text-2xl">
+                Raymond Ngobeni
+              </h3>
+              <h4 className="text-dark font-medium">South African</h4>
+              <h4 className="text-dark font-medium">
+                <span>Born:</span> 1996/08/13
+              </h4>
+              <h4 className="text-dark font-medium">
+                Full-Stack Software Developer
+              </h4>
             </div>
             <div className="col-span-2 flex flex-col items-center justify-between">
               <div className="flex flex-col items-end justify-center">
