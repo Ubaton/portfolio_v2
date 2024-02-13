@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
+      <footer className="w-full border-t-2 border-solid border-dark dark:border-light font-medium text-lg dark:text-light">
         <Layout className="flex items-center justify-between py-8 ">
           <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
           <div className="flex items-center">

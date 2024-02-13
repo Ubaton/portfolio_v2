@@ -8,6 +8,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills/Skills";
 import Exprience from "@/components/Experience/Exprience";
 import Education from "@/components/Education/Education";
+import Trophy from "../../public/assets/trophy-star.png";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -43,12 +44,12 @@ const about = () => {
           content="Learn more about Raymond Ngobeni, his background, expertise, and achievements. Get insights into his skills, experience, and contributions in the field of technology and web development."
         />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text={"Passion Fuels Purpose! "} className={"mb-16"} />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
 
@@ -62,8 +63,8 @@ const about = () => {
 
               <p className="font-medium my-4">
                 I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                pretty, it&apos;s about solving problems and creating intuitive,
+                enjoyable experiences for users.
               </p>
 
               <p className="font-medium">
@@ -75,30 +76,37 @@ const about = () => {
               </p>
             </div>
 
-            <div className="col-span-3 relative h-mav rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className=" absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="col-span-3 relative h-mav rounded-2xl border-2 border-solid border-dark dark:border-light bg-light p-8 dark:bg-dark">
+              <div className=" absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={ProfileImage}
                 alt="Raymond Ngobeni"
                 className="w-full h-auto rounded-lg"
               />
-              <h3 className="pt-4 font-semibold text-dark text-2xl">
-                Raymond Ngobeni
-              </h3>
-              <h4 className="text-dark font-medium">South African</h4>
-              <h4 className="text-dark font-medium">
-                <span>Born:</span> 1996/08/13
-              </h4>
-              <h4 className="text-dark font-medium">
-                Full-Stack Software Developer
-              </h4>
+              <div className="flex flex-row items-center text-dark dark:text-light">
+                <span>
+                  <h3 className="pt-4 font-semibold text-2xl">
+                    Raymond Ngobeni
+                  </h3>
+                  <h4 className="font-medium">South African</h4>
+                  <h4 className="font-medium">
+                    <span>Born:</span> 1996/08/13
+                  </h4>
+                  <h4 className="text-primary font-medium">
+                    Full-Stack Software Developer
+                  </h4>
+                </span>
+                <span className="pl-4">
+                  <Image src={Trophy} alt="Trophy" width={50} height={50} />{" "}
+                </span>
+              </div>
             </div>
             <div className="col-span-2 flex flex-col items-center justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={50} /> +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   setisfied clients
                 </h2>
               </div>
@@ -106,7 +114,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={30} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Projects Completed
                 </h2>
               </div>
@@ -114,7 +122,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={4} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Years of Experiences
                 </h2>
               </div>

@@ -19,7 +19,7 @@ export default function Home() {
         />
         <meta name="author" content="Raymond Ngobeni" />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex justify-between items-center w-full">
             <div className="w-1/2">
@@ -33,7 +33,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left"
+                className="!text-6xl !text-left pb-1"
               />
               <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
@@ -46,13 +46,13 @@ export default function Home() {
                   href="/dummy.pdf"
                   target={"_blank"}
                   download={true}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:hover:border-light"
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
                   href="mailto:mrrngobeni6@gmail.com"
-                  className="ml-4 text-lg font-medium capitalize text-dark p-2.5 px-6 rounded-lg border-2 border-solid border-gray-500 hover:border-dark hover:bg-dark hover:text-light"
+                  className="ml-4 text-lg font-medium capitalize text-dark dark:text-light p-2.5 px-6 rounded-lg border-2 border-solid border-dark dark:border-light hover:border-dark hover:bg-dark dark:hover:bg-light hover:text-light dark:hover:text-dark"
                 >
                   Contact
                 </Link>
