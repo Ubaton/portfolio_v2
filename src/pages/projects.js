@@ -12,12 +12,12 @@ const FramerIamge = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="flex items-center justify-between w-full rounded-2xl  border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12 relative">
-      <div className=" absolute rounded-br-3xl rounded-[2rem] top-0 -right-3 -z-10 w-[101%] h-[103%] bg-dark dark:bg-light" />
+    <article className="flex items-center justify-between w-full rounded-2xl  border border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-12 relative lg:flex-col lg:p-8 xs:roonded-2xl xs:rounded-br-3xl xs:p-4">
+      <div className=" absolute rounded-br-3xl rounded-[2rem] top-0 -right-3 -z-10 w-[101%] h-[103%] bg-dark dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target={"_blank"}
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <FramerIamge
           src={img}
@@ -28,8 +28,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         />
       </Link>
 
-      <div className="flex flex-col items-start justify-between w-1/2 pl-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+      <div className="flex flex-col items-start justify-between w-1/2 pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
           {type}
         </span>
         <Link
@@ -37,9 +37,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target={"_blank"}
           className="text-dark dark:text-light hover:text-primary dark:hover:text-primaryDark"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="flex items-center mt-2">
           <Link href={github} target={"_blank"} className="w-10">
             <GithubIcon className={"dark:text-light"} />
@@ -47,7 +51,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target={"_blank"}
-            className="ml-4 rounded-lg bg-dark hover:bg-light text-light hover:text-dark border-2 border-dark dark:border-2 dark:border-light p-2 px-6 text-lg font-semibold"
+            className="ml-4 rounded-lg bg-dark hover:bg-light text-light hover:text-dark border-2 border-dark dark:border-2 dark:border-light p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
           >
             Visit Project
           </Link>
@@ -59,8 +63,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="flex flex-col items-center justify-center rounded-2xl border border-solid border-dark dark:border-light bg-light dark:bg-dark p-6 relative">
-      <div className=" absolute rounded-br-3xl rounded-[2rem] top-0 -right-3 -z-10 w-[101%] h-[103%] bg-dark dark:bg-light" />
+    <article className="flex flex-col items-center justify-center rounded-2xl border border-solid border-dark dark:border-light bg-light dark:bg-dark p-6 xs:p-4 relative">
+      <div className=" absolute rounded-br-3xl rounded-[2rem] top-0 -right-3 -z-10 w-[101%] h-[103%] md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem] bg-dark dark:bg-light" />
       <Link
         href={link}
         target={"_blank"}
@@ -76,7 +80,7 @@ const Project = ({ type, title, img, link, github }) => {
       </Link>
 
       <div className="flex flex-col items-start justify-between w-full mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
           {type}
         </span>
         <Link
@@ -84,18 +88,20 @@ const Project = ({ type, title, img, link, github }) => {
           target={"_blank"}
           className="text-dark dark:text-light dark:hover:text-primaryDark hover:text-primary"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
 
         <div className="flex items-center justify-between w-full mt-2">
           <Link
             href={link}
             target={"_blank"}
-            className="text-lg dark:text-light hover:text-primary dark:hover:text-primaryDark font-semibold"
+            className="text-lg dark:text-light hover:text-primary dark:hover:text-primaryDark font-semibold md:text-base"
           >
             Visit
           </Link>
-          <Link href={github} target={"_blank"} className="w-8">
+          <Link href={github} target={"_blank"} className="w-8 md:w-6">
             <GithubIcon className={"dark:text-light"} />
           </Link>
         </div>
@@ -118,10 +124,10 @@ const projects = () => {
         <Layout className="pt-16">
           <AnimatedText
             text={"Imagination Trumps Knowledge!"}
-            className={"mb-16"}
+            className={"mb-16 lg:!text-7xl sm:!text-6xl xs:!4xl"}
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title={"Crypto Screener Application"}
@@ -134,7 +140,7 @@ const projects = () => {
                 type={"FeaturedProject"}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Crypto Screener Application"}
                 img={Project100}
@@ -146,7 +152,7 @@ const projects = () => {
                 type={"FeaturedProject"}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Crypto Screener Application"}
                 img={Project100}
@@ -170,7 +176,7 @@ const projects = () => {
                 type={"FeaturedProject"}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Crypto Screener Application"}
                 img={Project100}
@@ -182,7 +188,7 @@ const projects = () => {
                 type={"FeaturedProject"}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Crypto Screener Application"}
                 img={Project100}

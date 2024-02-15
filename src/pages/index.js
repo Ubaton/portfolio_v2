@@ -28,7 +28,7 @@ export default function Home() {
                 priority
                 sizes="(max-width: 768) 100vw, (max-width: 1200px) 50vw, 50vw "
                 alt="Raymond Ngobeni"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full md:py-4"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
