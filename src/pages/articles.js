@@ -10,6 +10,7 @@ import Article2 from "../../public/images/articles/create loading screen in reac
 import Article3 from "../../public/images/articles/create modal component in react using react portals.png";
 import Article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import Article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
+import TransitionEffect from "@/components/Animated/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -113,6 +114,7 @@ const Articles = () => {
           content="Explore Raymond Ngobeni's insightful articles covering various topics in web development and technology."
         />
       </Head>
+      <TransitionEffect />
       <main className="flex flex-col items-center justify-center overflow-hidden w-full mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

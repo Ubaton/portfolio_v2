@@ -9,6 +9,7 @@ import Skills from "@/components/Skills/Skills";
 import Exprience from "@/components/Experience/Exprience";
 import Education from "@/components/Education/Education";
 import Trophy from "../../public/assets/trophy-star.png";
+import TransitionEffect from "@/components/Animated/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -44,6 +45,7 @@ const about = () => {
           content="Learn more about Raymond Ngobeni, his background, expertise, and achievements. Get insights into his skills, experience, and contributions in the field of technology and web development."
         />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
