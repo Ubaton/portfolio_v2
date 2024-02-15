@@ -97,7 +97,14 @@ const about = () => {
                   </h4>
                 </span>
                 <span className="pl-4">
-                  <Image src={Trophy} alt="Trophy" width={50} height={50} />{" "}
+                  <Image
+                    src={Trophy}
+                    priority
+                    sizes="(max-width: 768) 100vw, (max-width: 1200px) 50vw, 33vw "
+                    alt="Trophy"
+                    width={50}
+                    height={50}
+                  />{" "}
                 </span>
               </div>
             </div>
