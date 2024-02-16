@@ -22,7 +22,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             target={"_blank"}
             className="text-primary dark:text-primaryDark capitalize"
           >
-            @{company}
+            @ {company}
           </a>
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light xs:text-sm">
@@ -55,31 +55,31 @@ const Experience = () => {
 
         <ul className="flex flex-col w-full items-start justify-between ml-4 xs:ml-2">
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
+            position={"Web Developer"}
+            company={"Silotu Consulting"}
+            companyLink={"http://www.silotuconsulting.co.za/"}
+            time={"2022-2023"}
+            address={"181 DERBY DR, NORTHRIDING, RANDBURG, GP, 2169"}
             work={`Worked on a team responsible for developing new features for Google's 
                    search engine, including improving the accuracy and relevance of search results and 
                    developing new tools for data analysis and visualization.`}
           />
           <Details
             position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
+            company={"Homepower"}
+            companyLink={"www.homepower.co.za"}
+            time={"2023-Present"}
+            address={`EAST DRIEFOTEIN VILLAGE, 15 PLOVER, CARLTONVILLE, GP, 2499`}
             work={`Worked on a team responsible for developing new features for Google's 
                    search engine, including improving the accuracy and relevance of search results and 
                    developing new tools for data analysis and visualization.`}
           />
           <Details
             position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
+            company={"Creative Minds Graphics"}
+            companyLink={"https://creativemg.netlify.app/"}
             time={"2022-Present"}
-            address={"Mountain View, CA"}
+            address={"4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"}
             work={`Worked on a team responsible for developing new features for Google's 
                    search engine, including improving the accuracy and relevance of search results and 
                    developing new tools for data analysis and visualization.`}

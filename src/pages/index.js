@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import Profiler from "../../public/images/profile/Statue.png";
+import Profiler from "../../public/images/profile/Raymond.png";
 import AnimatedText from "@/components/Animated/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/icons/icons";
@@ -30,7 +30,7 @@ export default function Home() {
                 priority
                 sizes="(max-width: 768) 100vw, (max-width: 1200px) 50vw, 50vw "
                 alt="Raymond Ngobeni"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full md:py-4"
+                className="w-full h-auto p-2 lg:hidden md:inline-block md:w-full md:py-4"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
+        <div className="absolute right-8 bottom-0 inline-block w-24 md:hidden">
           <Image
             src={LightBulb}
             alt="Raymond Ngobeni"
