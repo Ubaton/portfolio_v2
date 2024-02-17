@@ -7,6 +7,8 @@ import Link from "next/link";
 import React from "react";
 import Project100 from "../../public/images/projects/SILOTU-Consulting.png";
 import Project200 from "../../public/images/projects/CMG_QRcodeG2.png";
+import Project300 from "../../public/images/projects/Login.png";
+import Project400 from "../../public/images/projects/CMG-Portfolio.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/Animated/TransitionEffect";
 
@@ -138,42 +140,41 @@ const projects = () => {
                 summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
-                link={"/"}
+                link={"http://www.silotuconsulting.co.za/"}
                 github={"https://github.com/Ubaton"}
                 type={"Featured Project"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"SASS QR Code Generator"}
+                title={"SAAS QR Code Generator"}
                 img={Project200}
-                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                          It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                          local currency.`}
-                link={"/"}
-                github={"https://github.com/Ubaton"}
+                summary={`Introducing our dynamic SAAS QR Code Generator, alongside an Image Compressor, File Converter, and Video Compressor. Streamline your digital tasks with ease, optimizing images, converting files, and compressing videos for seamless sharing and enhanced performance. Simplify your workflow and boost productivity today.`}
+                link={"https://qrcode-generator-cmg.netlify.app/"}
+                github={"https://github.com/Ubaton/QRCode"}
                 type={"Featured Project"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
-                img={Project100}
+                title={"CMG Portfolio Web Site"}
+                img={Project400}
                 summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
-                link={"/"}
-                github={"https://github.com/Ubaton"}
+                link={"https://creativemg.netlify.app/"}
+                github={"https://github.com/Ubaton/creativemgportfolio"}
                 type={"Featured Project"}
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                title={"Crypto Screener Application"}
-                img={Project100}
-                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                          It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                          local currency.`}
+                title={"CRUD Full Stack Web Application"}
+                img={Project300}
+                summary={`Discover our cutting-edge CRUD App, leveraging Next.js, Tailwind CSS, and React Router.
+                          With seamless RestFul API integration and MongoDB backend, it efficiently captures Residetail details. 
+                          From local emergencies to national support, it ensures smooth operations and facilitates online package deliveries. 
+                          Join us in revolutionizing data management and emergency response. Experience excellence with our innovative solution.`}
                 link={"/"}
                 github={"https://github.com/Ubaton"}
                 type={"Featured Project"}
@@ -182,7 +183,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Crypto Screener Application"}
-                img={Project100}
+                img={Project300}
                 summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
