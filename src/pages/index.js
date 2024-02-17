@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Profiler from "../../public/images/profile/Raymond.png";
@@ -46,7 +47,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/dummy.pdf"
+                  href="/pdf/Raymond-Ngobeni.pdf"
                   target={"_blank"}
                   download={true}
                   className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 md:p-2 md:px-4 md:text-base rounded-lg text-lg font-semibold hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:hover:border-light"
@@ -64,13 +65,16 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute right-8 bottom-0 inline-block w-24 md:hidden">
+        <motion.div
+          whileHover={{ y: -5 }}
+          className="absolute right-8 bottom-0 inline-block w-24 md:hidden"
+        >
           <Image
             src={LightBulb}
             alt="Raymond Ngobeni"
             className="w-full h-auto"
           />
-        </div>
+        </motion.div>
       </main>
     </>
   );

@@ -101,7 +101,7 @@ const about = () => {
                     Full-Stack Software Developer
                   </h4>
                 </span>
-                <span className="pl-4">
+                <span className="px-9">
                   <Image
                     src={Trophy}
                     priority
@@ -109,7 +109,7 @@ const about = () => {
                     alt="Trophy"
                     width={50}
                     height={50}
-                  />{" "}
+                  />
                 </span>
               </div>
             </div>

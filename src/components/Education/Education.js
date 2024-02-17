@@ -48,9 +48,9 @@ const Education = () => {
 
         <ul className="flex flex-col w-full items-start justify-between ml-4 xs:ml-2">
           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            time={"2016-2020"}
-            place={"Massachusetts Institute Of Technology (MIT)"}
+            type={"Matric Certificate"}
+            time={"2002-2015"}
+            place={"Phomolong Sconadry School"}
             info={`Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence.`}
           />

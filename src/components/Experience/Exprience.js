@@ -86,20 +86,20 @@ const Experience = () => {
           />
           <Details
             position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
+            company={"Creative Minds Graphics"}
+            companyLink={"https://qrcode-generator-cmg.netlify.app/"}
             time={"2022-Present"}
-            address={"Mountain View, CA"}
-            work={`Worked on a team responsible for developing new features for Google's 
+            address={"4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"}
+            work={` SasS Worked on a team responsible for developing new features for Google's 
                    search engine, including improving the accuracy and relevance of search results and 
                    developing new tools for data analysis and visualization.`}
           />
           <Details
             position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
+            company={"Creative Minds Graphics"}
+            companyLink={"https://creativemg.netlify.app/"}
             time={"2022-Present"}
-            address={"Mountain View, CA"}
+            address={"4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"}
             work={`Worked on a team responsible for developing new features for Google's 
                    search engine, including improving the accuracy and relevance of search results and 
                    developing new tools for data analysis and visualization.`}

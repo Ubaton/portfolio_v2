@@ -5,7 +5,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Project100 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import Project100 from "../../public/images/projects/SILOTU-Consulting.png";
+import Project200 from "../../public/images/projects/CMG_QRcodeG2.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/Animated/TransitionEffect";
 
@@ -132,14 +133,26 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title={"Crypto Screener Application"}
+                title={"SILOTU Consulting SAP Security"}
                 img={Project100}
                 summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
                 link={"/"}
-                github={"/"}
-                type={"FeaturedProject"}
+                github={"https://github.com/Ubaton"}
+                type={"Featured Project"}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title={"SASS QR Code Generator"}
+                img={Project200}
+                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                          It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                          local currency.`}
+                link={"/"}
+                github={"https://github.com/Ubaton"}
+                type={"Featured Project"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -150,20 +163,8 @@ const projects = () => {
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
                 link={"/"}
-                github={"/"}
-                type={"FeaturedProject"}
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title={"Crypto Screener Application"}
-                img={Project100}
-                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                          It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                          local currency.`}
-                link={"/"}
-                github={"/"}
-                type={"FeaturedProject"}
+                github={"https://github.com/Ubaton"}
+                type={"Featured Project"}
               />
             </div>
             <div className="col-span-12">
@@ -174,8 +175,8 @@ const projects = () => {
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
                 link={"/"}
-                github={"/"}
-                type={"FeaturedProject"}
+                github={"https://github.com/Ubaton"}
+                type={"Featured Project"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -186,8 +187,8 @@ const projects = () => {
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
                 link={"/"}
-                github={"/"}
-                type={"FeaturedProject"}
+                github={"https://github.com/Ubaton"}
+                type={"Featured Project"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -198,8 +199,8 @@ const projects = () => {
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
                 link={"/"}
-                github={"/"}
-                type={"FeaturedProject"}
+                github={"https://github.com/Ubaton"}
+                type={"Featured Project"}
               />
             </div>
           </div>

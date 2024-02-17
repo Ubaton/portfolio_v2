@@ -99,7 +99,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
             href="https://twitter.com/_GoldManRay"
-            alt=""
+            alt="Raymond's TwitterX"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
@@ -111,7 +111,7 @@ const NavBar = () => {
 
           <motion.a
             href="https://github.com/Ubaton"
-            alt=""
+            alt="Raymond's GitHub"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
@@ -123,7 +123,7 @@ const NavBar = () => {
 
           <motion.a
             href="https://www.linkedin.com/in/raymond-ngobeni-b7ab26163/"
-            alt=""
+            alt="Raymond's LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
@@ -135,7 +135,7 @@ const NavBar = () => {
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            className={`ml-6 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
             }`}
           >

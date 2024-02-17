@@ -1,6 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Layout from "../Layout";
 import Link from "next/link";
+import { GithubIcon } from "../icons/icons";
 
 const Footer = () => {
   return (
@@ -17,11 +19,13 @@ const Footer = () => {
             </Link>
           </div>
           <Link
-            href="/Hello"
+            href="https://github.com/Ubaton"
             target={"_blank"}
             className="underline underline-offset-2"
           >
-            Say Hello
+            <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+              <GithubIcon className={"w-[2rem] h-[2rem]"} />
+            </motion.div>
           </Link>
         </Layout>
       </footer>
