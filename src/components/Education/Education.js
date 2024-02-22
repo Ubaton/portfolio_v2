@@ -48,25 +48,25 @@ const Education = () => {
 
         <ul className="flex flex-col w-full items-start justify-between ml-4 xs:ml-2">
           <Details
-            type={"Matric Certificate"}
+            type={"Matric Certificate."}
             time={"2002-2015"}
-            place={"Phomolong Sconadry School"}
+            place={"Phomolong Sconadry School."}
             info={`Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence.`}
           />
           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            time={"2016-2020"}
-            place={"Massachusetts Institute Of Technology (MIT)"}
-            info={`Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.`}
+            type={"Degree in Mechatronics Engineering."}
+            time={"2016-2017"}
+            place={"Germiston Ekurhuleni West College (EWC)."}
+            info={`Relevant courses included Engineering Sciences and Mathantics, Engineering Draft and Design, and Mechanotechnics.`}
           />
           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            time={"2016-2020"}
-            place={"Massachusetts Institute Of Technology (MIT)"}
-            info={`Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.`}
+            type={"Computer Science Certificate."}
+            time={"2023-2024"}
+            place={
+              "San Francisco, 600 Harrison Street, 3rd Floor, United States."
+            }
+            info={`Relevant courses included Data Structures and JavaScript, Computer Systems Engineering, and MySQL.`}
           />
         </ul>
       </div>

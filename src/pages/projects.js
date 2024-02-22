@@ -182,13 +182,14 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
+                title={"Jobshearch: Full-stack Mobile app"}
                 img={Project300}
-                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                          It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                          local currency.`}
-                link={"/"}
-                github={"https://github.com/Ubaton"}
+                summary={`Introducing our mobile app for real-time job applications. 
+                          Built with React Native and custom CSS, it offers a seamless UI/UX experience. 
+                          Powered by the Rapid API, our backend ensures swift communication between users and employers. 
+                          Experience the future of job hunting today.`}
+                link={"https://github.com/Ubaton/jobshearch"}
+                github={"https://github.com/Ubaton/jobshearch"}
                 type={"Featured Project"}
               />
             </div>
