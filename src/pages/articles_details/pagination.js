@@ -73,7 +73,7 @@ const Pagination = () => {
           />
           <div className="p-2 space-y-4">
             <p className="text-zinc-400 font-medium text-xl">
-              In this article, we'll walk through the process of building a
+              In this article, we&apos;ll walk through the process of building a
               custom pagination component in ReactJS from scratch. Pagination is
               a common feature in web applications that allows users to navigate
               through multiple pages of content, such as articles, search
@@ -82,7 +82,7 @@ const Pagination = () => {
             <SectionHeading text="Prerequisites" />
             <p className="text-zinc-400 font-medium text-xl">
               Before we begin, make sure you have Node.js and npm (Node Package
-              Manager) installed on your system. You'll also need a basic
+              Manager) installed on your system. You&apos;ll also need a basic
               understanding of ReactJS and JavaScript.
             </p>
             <SectionHeading text="Setting up the Project" />
