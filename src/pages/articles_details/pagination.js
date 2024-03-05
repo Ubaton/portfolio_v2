@@ -65,14 +65,14 @@ const Pagination = () => {
           content="Explore Raymond Ngobeni's insightful articles details page covering basic topics in Pagination."
         />
       </Head>
-      <main>
+      <main className="flex flex-col items-center justify-center overflow-hidden w-full mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Build A Custom Pagination Component In ReactJS From Scratch!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!4xl"
           />
           <div className="p-2 space-y-4">
-            <p className="text-zinc-400 font-medium text-xl">
+            <p className=" font-medium text-xl">
               In this article, we&apos;ll walk through the process of building a
               custom pagination component in ReactJS from scratch. Pagination is
               a common feature in web applications that allows users to navigate
@@ -80,14 +80,16 @@ const Pagination = () => {
               results, or product listings.
             </p>
             <SectionHeading text="Prerequisites" />
-            <p className="text-zinc-400 font-medium text-xl">
+            <p className=" font-medium text-xl">
               Before we begin, make sure you have Node.js and npm (Node Package
               Manager) installed on your system. You&apos;ll also need a basic
               understanding of ReactJS and JavaScript.
             </p>
             <SectionHeading text="Setting up the Project" />
-            <Instruction code="npx create-react-app pagination-demo" />
-            <Instruction code="cd pagination-demo\nnpm install react-bootstrap" />
+            <Instruction code="npx create-react-app" />
+            <Instruction code="pagination-demo" />
+            <Instruction code="cd pagination-demo" />
+            <Instruction code="npm install react-bootstrap" />
             <SectionHeading text="Creating the Pagination Component" />
             <CodeBlock
               code={codePage.code}
@@ -103,13 +105,13 @@ const Pagination = () => {
 };
 
 const SectionHeading = ({ text }) => {
-  return <h2 className="font-semibold text-zinc-400 text-2xl ">{text}</h2>;
+  return <h2 className="font-semibold  text-2xl ">{text}</h2>;
 };
 
 const Instruction = ({ code }) => {
   return (
     <>
-      <p className="text-zinc-400 font-medium text-md">{code}</p>
+      <p className=" font-medium text-md">{code}</p>
       <motion.code
         initial={{ y: 200 }}
         whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
@@ -149,7 +151,7 @@ const CodeBlock = ({ code, handleCopy, copied }) => {
 const ComponentDescription = () => {
   return (
     <>
-      <p className="text-zinc-400 font-medium text-md">In this component:</p>
+      <p className=" font-medium text-md">In this component:</p>
       <ul className="list-disc ml-4 text-zinc-500">
         <li className="mb-2">
           We import the Pagination component from react-bootstrap.
