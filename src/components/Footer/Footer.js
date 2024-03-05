@@ -24,7 +24,7 @@ const Footer = () => {
             className="underline underline-offset-2"
           >
             <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-              <GithubIcon className={"w-[2rem] h-[2rem]"} />
+              <GithubIcon className={"w-[2.1rem] h-[2.1rem]"} />
             </motion.div>
           </Link>
         </Layout>

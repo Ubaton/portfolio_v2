@@ -61,7 +61,7 @@ const Education = () => {
             info={`Relevant courses included Engineering Sciences and Mathantics, Engineering Draft and Design, and Mechanotechnics.`}
           />
           <Details
-            type={"Computer Science Certificate."}
+            type={"Javascript Certificate (Online)."}
             time={"2023-2024"}
             place={
               "San Francisco, 600 Harrison Street, 3rd Floor, United States."
