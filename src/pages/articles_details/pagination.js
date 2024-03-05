@@ -53,7 +53,7 @@ const Pagination = () => {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 2000);
+    }, 1200);
   };
 
   return (
@@ -133,12 +133,13 @@ const CodeBlock = ({ code, handleCopy, copied }) => {
       viewport={{ once: true }}
     >
       <span className="flex justify-end">
-        <button
+        <motion.button
+          whileTap={{ scale: 0.98 }}
           onClick={handleCopy}
           className="bg-zinc-700 text-zinc-500 px-4 py-2 rounded-md hover:bg-zinc-600"
         >
           {copied ? "Copied!" : "Copy"}
-        </button>
+        </motion.button>
       </span>
       {code}
     </motion.pre>
