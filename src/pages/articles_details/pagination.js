@@ -111,7 +111,7 @@ const SectionHeading = ({ text }) => {
 const Instruction = ({ code }) => {
   return (
     <>
-      <p className=" font-medium text-md">{code}</p>
+      <p className="font-medium text-md">{code}</p>
       <motion.code
         initial={{ y: 200 }}
         whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
@@ -129,7 +129,7 @@ const Instruction = ({ code }) => {
 const CodeBlock = ({ code, handleCopy, copied }) => {
   return (
     <motion.pre
-      className="flex flex-col text-primary bg-zinc-700 p-2 rounded-md"
+      className="flex flex-col text-primary bg-zinc-700 p-2 rounded-md !w-auto"
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
