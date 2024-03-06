@@ -3,6 +3,7 @@ import AnimatedText from "@/components/Animated/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import DetailLayout from "@/components/DetailLayout";
 
 const codePage = {
   code: `// src/Pagination.js
@@ -71,7 +72,7 @@ const Pagination = () => {
             text="Build A Custom Pagination Component In ReactJS From Scratch!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!4xl"
           />
-          <div className="p-2 space-y-4">
+          <DetailLayout className="p-2 space-y-4">
             <p className=" font-medium text-xl">
               In this article, we&apos;ll walk through the process of building a
               custom pagination component in ReactJS from scratch. Pagination is
@@ -97,7 +98,7 @@ const Pagination = () => {
               copied={copied}
             />
             <ComponentDescription />
-          </div>
+          </DetailLayout>
         </Layout>
       </main>
     </>
@@ -138,7 +139,7 @@ const CodeBlock = ({ code, handleCopy, copied }) => {
         <motion.button
           whileTap={{ scale: 0.98 }}
           onClick={handleCopy}
-          className="bg-zinc-700 text-zinc-500 px-4 py-2 rounded-md hover:bg-zinc-600"
+          className="bg-zinc-700 text-zinc-500 px-2 py-1 rounded-md hover:bg-zinc-600"
         >
           {copied ? "Copied!" : "Copy"}
         </motion.button>

@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.decimal-list {
+  list-style-type: decimal;
+  display: block;
+  padding-left: 1rem;
+}

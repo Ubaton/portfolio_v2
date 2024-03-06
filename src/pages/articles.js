@@ -133,7 +133,7 @@ const Articles = () => {
               title="Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens"
               summary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
               time="10 min read"
-              link="/"
+              link="/articles_details/loadingScreen"
               img={Article2}
             />
           </ul>
