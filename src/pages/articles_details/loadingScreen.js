@@ -92,6 +92,7 @@ const LoadingScreen = () => {
               how to utilize React-Loading, React-Lottie, and build a custom
               loading screen to enhance the user experience.`}
             />
+
             <SectionHeading text={"Introduction"} />
             <SectionParagraph
               paragraph={`Loading screens serve as indicators to users that content is being fetched or processed,
@@ -100,6 +101,7 @@ const LoadingScreen = () => {
                 we can engage users and improve the overall usability of our applications.`}
             />
             <SectionHeading text={"Methods"} />
+
             <ol className="decimal-list space-y-4">
               <ListSection
                 title="React-Loading"
@@ -129,7 +131,7 @@ const LoadingScreen = () => {
               />
             </ol>
 
-            <span className="pt-4">
+            <span className="mt-4">
               <SectionHeading text={"Conclusion"} />
               <SectionParagraph
                 paragraph={`In this article, we've explored three different methods
@@ -148,7 +150,7 @@ const LoadingScreen = () => {
 };
 
 const SectionHeading = ({ text }) => {
-  return <h2 className="font-semibold text-2xl">{text}</h2>;
+  return <h2 className="font-semibold text-2xl !text-primary">{text}</h2>;
 };
 
 const SectionParagraph = ({ paragraph }) => {
@@ -158,8 +160,8 @@ const SectionParagraph = ({ paragraph }) => {
 const ListSection = ({ title, paragraph, code, handleCopy, copied }) => {
   return (
     <li className="font-semibold text-[1.2rem]">
-      <SectionParagraph className="!text-primary" paragraph={title} />
-      <SectionParagraph className="!text-zinc-400" paragraph={paragraph} />
+      <SectionParagraph paragraph={title} />
+      <SectionParagraph paragraph={paragraph} />
       <CodeBlock code={code} handleCopy={handleCopy} copied={copied} />
     </li>
   );
