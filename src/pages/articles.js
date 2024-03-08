@@ -5,11 +5,14 @@ import Image from "next/image";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/Animated/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
-import Article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import Article2 from "../../public/images/articles/create loading screen in react js.jpg";
-import Article3 from "../../public/images/articles/create modal component in react using react portals.png";
-import Article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import Article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
+import Hooks from "../../public/images/articles/Mastering React Hooks.jpg";
+import Authentication from "../../public/images/articles/User Authentication.jpg";
+import Performance from "../../public/images/articles/Enhancing Performance.jpg";
+import Rendering from "../../public/images/articles/Rendering.jpg";
+import Routing from "../../public/images/articles/Efficient Routing.jpg";
+import CustomHooks from "../../public/images/articles/Reusable Custom Hooks.jpg";
+import AnimationHooks from "../../public/images/articles/Modular Animation Hooks.jpg";
+import DataIntegrity from "../../public/images/articles/Data Integrity.jpg";
 import TransitionEffect from "@/components/Animated/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -127,14 +130,14 @@ const Articles = () => {
               summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/articles_details/pagination"
-              img={Article1}
+              img={Hooks}
             />
             <FeaturedArticle
               title="Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens"
               summary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
               time="10 min read"
               link="/articles_details/loadingScreen"
-              img={Article2}
+              img={Authentication}
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
@@ -142,52 +145,52 @@ const Articles = () => {
           </h2>
           <ul>
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Mastering React Hooks: Building a Reusable Custom Hook for State Management"
               date="February 12, 2024"
               link="/"
-              img={Article4}
+              img={Hooks}
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Streamlining User Authentication: A Comprehensive Guide to JWT Integration in React"
               date="February 12, 2024"
               link="/"
-              img={Article5}
+              img={Authentication}
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Enhancing Performance: Implementing Code Splitting in React Applications"
               date="February 12, 2024"
               link="/"
-              img={Article3}
+              img={Performance}
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Building Robust Server-Side Rendering Solutions with React and Node.js"
               date="February 12, 2024"
               link="/"
-              img={Article3}
+              img={Rendering}
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Implementing Efficient Routing Strategies in React Applications"
               date="February 12, 2024"
               link="/"
-              img={Article3}
+              img={Routing}
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Crafting Reusable Custom Hooks for Seamless Internationalization in React"
               date="February 12, 2024"
               link="/"
-              img={Article3}
+              img={CustomHooks}
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Elevating User Experience with Modular Animation Hooks in React"
               date="February 12, 2024"
               link="/"
-              img={Article3}
+              img={AnimationHooks}
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="Ensuring Data Integrity: Reusable Form Management with Custom React Hooks"
               date="February 12, 2024"
               link="/"
-              img={Article3}
+              img={DataIntegrity}
             />
           </ul>
         </Layout>

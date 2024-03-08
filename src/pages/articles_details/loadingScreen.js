@@ -77,7 +77,7 @@ const LoadingScreen = () => {
           content="Explore Raymond Ngobeni's insightful articles details page covering basic topics in Pagination."
         />
       </Head>
-      <main className="flex flex-col items-center justify-center overflow-hidden w-full mb-16 dark:text-light">
+      <main className="flex flex-col items-center justify-center overflow-hidden w-full px-4 md:px-8 lg:px-16 mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens"
