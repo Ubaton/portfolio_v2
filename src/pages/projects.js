@@ -9,6 +9,8 @@ import Project100 from "../../public/images/projects/SILOTU-Consulting.png";
 import Project200 from "../../public/images/projects/CMG_QRcodeG2.png";
 import Project300 from "../../public/images/projects/Login.png";
 import Project400 from "../../public/images/projects/CMG-Portfolio.png";
+import Project500 from "../../public/images/projects/Business Card Generator.png";
+import Project600 from "../../public/images/projects/Job Search.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/Animated/TransitionEffect";
 
@@ -183,7 +185,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Jobshearch: Full-stack Mobile app"}
-                img={Project300}
+                img={Project600}
                 summary={`Introducing our mobile app for real-time job applications. 
                           Built with React Native and custom CSS, it offers a seamless UI/UX experience. 
                           Powered by the Rapid API, our backend ensures swift communication between users and employers. 
@@ -195,8 +197,8 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
-                img={Project100}
+                title={"Business Card Generator"}
+                img={Project500}
                 summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                           local currency.`}
