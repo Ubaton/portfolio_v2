@@ -5,6 +5,8 @@ import Image from "next/image";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/Animated/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
+import Pagination from "../../public/images/articles/Pagination.jpg";
+import LoadingScreens from "../../public/images/articles/Loading Screens.jpg";
 import Hooks from "../../public/images/articles/Mastering React Hooks.jpg";
 import Authentication from "../../public/images/articles/User Authentication.jpg";
 import Performance from "../../public/images/articles/Enhancing Performance.jpg";
@@ -130,14 +132,14 @@ const Articles = () => {
               summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/articles_details/pagination"
-              img={Hooks}
+              img={Pagination}
             />
             <FeaturedArticle
               title="Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens"
               summary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
               time="10 min read"
               link="/articles_details/loadingScreen"
-              img={Authentication}
+              img={LoadingScreens}
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
