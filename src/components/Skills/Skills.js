@@ -43,6 +43,7 @@ const Skills = () => {
         <Skill name="Figma" x="-20vw" y="-7vw" />
         <Skill name="Firebase" x="20vw" y="15vw" />
         <Skill name="MongoDB" x="-10vw" y="12vw" />
+        <Skill name="AWS Cloud" x="-27vw" y="10vw" />
         <Skill name="MySQL" x="-14vw" y="18vw" />
         <Skill name="Tailwind CSS" x="26vw" y="-18vw" />
       </div>
