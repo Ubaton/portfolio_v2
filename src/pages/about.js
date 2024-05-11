@@ -10,6 +10,7 @@ import Exprience from "@/components/Experience/Exprience";
 import Education from "@/components/Education/Education";
 import Trophy from "../../public/assets/trophy-star.png";
 import TransitionEffect from "@/components/Animated/TransitionEffect";
+import Certificates from "@/components/Certificates/Certificates";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -140,6 +141,7 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Certificates />
           <Skills />
           <Exprience />
           <Education />
