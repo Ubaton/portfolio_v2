@@ -64,7 +64,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center w-full">
-            <button className="bg-dark text-light p-2 rounded-lg">
+            <button className="ml-4 text-lg font-medium capitalize text-dark dark:text-light p-2.5 px-6 md:p-2 md:px-4 md:text-base rounded-lg border-2 border-solid border-dark dark:border-light hover:border-dark hover:bg-dark dark:hover:bg-light hover:text-light dark:hover:text-dark">
               <Link href="/play-a-game">Play a Game</Link>
             </button>
           </div>

@@ -11,6 +11,7 @@ import {
 } from "../icons/icons";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
 import { useState } from "react";
+import { Github, Linkedin, LinkedinIcon, Twitch, Twitter } from "lucide-react";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -106,7 +107,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
             className="w-6 mr-3"
           >
-            <TwitterIcon />
+            <Twitter />
           </motion.a>
 
           <motion.a
@@ -118,7 +119,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
             className="w-6 mx-3"
           >
-            <GithubIcon />
+            <Github />
           </motion.a>
 
           <motion.a
@@ -130,7 +131,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
             className="w-6 ml-3"
           >
-            <LinkedInIcon />
+            <LinkedinIcon />
           </motion.a>
 
           <button
@@ -191,7 +192,7 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
               className="w-6 mr-3 sm:mx-1"
             >
-              <TwitterIcon />
+              <Twitter />
             </motion.a>
 
             <motion.a
@@ -203,7 +204,7 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
               className="w-6 mx-3 sm:mx-1"
             >
-              <GithubIcon />
+              <Github />
             </motion.a>
 
             <motion.a
@@ -215,7 +216,7 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
               className="w-6 ml-3 sm:mx-1"
             >
-              <LinkedInIcon />
+              <Linkedin />
             </motion.a>
 
             <button

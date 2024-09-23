@@ -56,6 +56,18 @@ const Experience = () => {
         <ul className="flex flex-col w-full items-start justify-between ml-4 xs:ml-2">
           <Details
             position={"Web Developer"}
+            company={"SundayCreatives"}
+            companyLink={"https://www.sundaycreatives.co.za/"}
+            time={"2024-Present"}
+            address={
+              "Northlands Corner New Market Road, Northriding Johannesburg"
+            }
+            work={`Working as team responsible for developing new features and Softwares for 
+                   clients, and creating custome application, including improving the exiting Web and Mobile app and 
+                   developing new tools and seemless integration.`}
+          />
+          <Details
+            position={"Web Developer"}
             company={"Silotu Consulting"}
             companyLink={"http://www.silotuconsulting.co.za/"}
             time={"2022-2023"}
