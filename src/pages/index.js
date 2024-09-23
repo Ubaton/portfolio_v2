@@ -63,6 +63,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center items-center w-full">
+            <button className="bg-dark text-light p-2 rounded-lg">
+              <Link href="/play-a-game">Play a Game</Link>
+            </button>
+          </div>
         </Layout>
         <HireMe />
         <motion.div
