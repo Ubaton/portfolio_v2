@@ -11,6 +11,7 @@ import Project300 from "../../public/images/projects/Login.png";
 import Project400 from "../../public/images/projects/CMG-Portfolio.png";
 import Project500 from "../../public/images/projects/Business Card Generator.png";
 import Project600 from "../../public/images/projects/Job Search.jpg";
+import Filegen from "../../public/images/projects/Filegen.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/Animated/TransitionEffect";
 
@@ -135,6 +136,17 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                title={"File Generator"}
+                img={Filegen}
+                summary={`Create, visualize, and download your project's file structure in seconds. Perfect for developers and project managers.`}
+                link={"https://filegen.vercel.app/"}
+                github={"https://github.com/Ubaton"}
+                type={"Featured Project"}
+              />
+            </div>
+
             <div className="col-span-12">
               <FeaturedProject
                 title={"SILOTU Consulting SAP Security"}
