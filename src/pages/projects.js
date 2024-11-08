@@ -141,8 +141,10 @@ const projects = () => {
               <FeaturedProject
                 title={"CMG V2"}
                 img={CMGWebsite}
-                summary={`Create, visualize, and download your project's file structure in seconds. Perfect for developers and project managers.`}
-                link={"https://filegen.vercel.app/"}
+                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                          It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                          local currency.`}
+                link={"https://creativemg-website.vercel.app/"}
                 github={"https://github.com/Ubaton"}
                 type={"Featured Project"}
               />
