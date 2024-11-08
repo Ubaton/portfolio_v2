@@ -95,7 +95,6 @@ const Experience = () => {
  Improved the accuracy and relevance of search results.
  Developed new tools for data analysis and visualization.`)}
           />
-          ,
           <Details
             key="homepower"
             position="Software Engineer"
@@ -107,7 +106,6 @@ const Experience = () => {
  Enhanced the accuracy and relevance of search results.
  Created tools for comprehensive data analysis and visualization.`)}
           />
-          ,
           <Details
             key="creative-minds-graphics-1"
             position="Software Engineer"
@@ -119,7 +117,6 @@ const Experience = () => {
  Focused on improving the accuracy and relevance of search outcomes.
  Developed tools for data analysis and visual reporting.`)}
           />
-          ,
           <Details
             key="creative-minds-graphics-qr"
             position="Software Engineer"
@@ -131,7 +128,6 @@ const Experience = () => {
  Enhanced the accuracy of search results and user experience.
  Created and implemented new tools for data analysis and visualization.`)}
           />
-          ,
           <Details
             key="creative-minds-graphics-2"
             position="Software Engineer"
