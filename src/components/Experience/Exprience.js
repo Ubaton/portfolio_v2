@@ -25,7 +25,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             @ {company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light xs:text-sm">
+        <span className="capitalize font-medium text-dark/75 dark:text-primary xs:text-sm">
           {time} | {address}
         </span>
         <p className="font-medium w-full md:text-sm">{work}</p>
@@ -41,6 +41,19 @@ const Experience = () => {
     offset: ["start end", "center start"],
   });
 
+  const workToList = (work) => {
+    return (
+      <span className="list-disc pl-5">
+        {work
+          .split("\n")
+          .filter((item) => item.trim() !== "")
+          .map((item, index) => (
+            <li key={index}>{item.trim()}</li>
+          ))}
+      </span>
+    );
+  };
+
   return (
     <div className="my-64">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
@@ -55,66 +68,80 @@ const Experience = () => {
 
         <ul className="flex flex-col w-full items-start justify-between ml-4 xs:ml-2">
           <Details
-            position={"Web Developer"}
-            company={"SundayCreatives"}
-            companyLink={"https://www.sundaycreatives.co.za/"}
-            time={"2024-Present"}
-            address={
-              "Northlands Corner New Market Road, Northriding Johannesburg"
-            }
-            work={`Working as team responsible for developing new features and Softwares for 
-                   clients, and creating custome application, including improving the exiting Web and Mobile app and 
-                   developing new tools and seemless integration.`}
+            key="sunday-creatives"
+            position="Web Developer"
+            company="SundayCreatives"
+            companyLink="https://www.sundaycreatives.co.za/"
+            time="2024-Present"
+            address="Northlands Corner New Market Road, Northriding Johannesburg"
+            work={workToList(`Software Engineer
+
+ Designed and structured scalable applications, ensuring seamless updates and maintenance.
+ Developed robust codebase architecture with a focus on clean integration and scalability.
+ Worked with industry-leading databases such as MySQL, PostgreSQL, AWS Cloud, and Firebase.
+ Utilized a versatile tech stack, including JavaScript, TypeScript, Python, Node.js, and RESTful APIs, for maintainable and efficient software development.
+ Optimized cloud-based applications and databases, focusing on performance, reliability, and cost-effectiveness.
+ Conducted comprehensive data analysis for large-scale applications using Python to derive actionable insights.`)}
           />
+          ,
           <Details
-            position={"Web Developer"}
-            company={"Silotu Consulting"}
-            companyLink={"http://www.silotuconsulting.co.za/"}
-            time={"2022-2023"}
-            address={"181 DERBY DR, NORTHRIDING, RANDBURG, GP, 2169"}
-            work={`Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.`}
+            key="silotu-consulting"
+            position="Web Developer"
+            company="Silotu Consulting"
+            companyLink="https://www.silotuconsulting.co.za/"
+            time="2022-2023"
+            address="181 DERBY DR, NORTHRIDING, RANDBURG, GP, 2169"
+            work={workToList(`Worked on a team responsible for developing new features for Google's search engine.
+ Improved the accuracy and relevance of search results.
+ Developed new tools for data analysis and visualization.`)}
           />
+          ,
           <Details
-            position={"Software Engineer"}
-            company={"Homepower"}
-            companyLink={"www.homepower.co.za"}
-            time={"2023-Present"}
-            address={`EAST DRIEFOTEIN VILLAGE, 15 PLOVER, CARLTONVILLE, GP, 2499`}
-            work={`Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.`}
+            key="homepower"
+            position="Software Engineer"
+            company="Homepower"
+            companyLink="https://www.homepower.co.za"
+            time="2023-2024"
+            address="EAST DRIEFOTEIN VILLAGE, 15 PLOVER, CARLTONVILLE, GP, 2499"
+            work={workToList(`Contributed to the development of new features for Google's search engine.
+ Enhanced the accuracy and relevance of search results.
+ Created tools for comprehensive data analysis and visualization.`)}
           />
+          ,
           <Details
-            position={"Software Engineer"}
-            company={"Creative Minds Graphics"}
-            companyLink={"https://creativemg.netlify.app/"}
-            time={"2022-Present"}
-            address={"4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"}
-            work={`Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.`}
+            key="creative-minds-graphics-1"
+            position="Software Engineer"
+            company="Creative Minds Graphics"
+            companyLink="https://creativemg.netlify.app/"
+            time="2022-Present"
+            address="4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"
+            work={workToList(`Collaborated on a team to enhance Google's search engine features.
+ Focused on improving the accuracy and relevance of search outcomes.
+ Developed tools for data analysis and visual reporting.`)}
           />
+          ,
           <Details
-            position={"Software Engineer"}
-            company={"Creative Minds Graphics"}
-            companyLink={"https://qrcode-generator-cmg.netlify.app/"}
-            time={"2022-Present"}
-            address={"4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"}
-            work={` SasS Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.`}
+            key="creative-minds-graphics-qr"
+            position="Software Engineer"
+            company="Creative Minds Graphics"
+            companyLink="https://qrcode-generator-cmg.netlify.app/"
+            time="2022-Present"
+            address="4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"
+            work={workToList(`Engaged in a SaaS project developing features for Google's search engine.
+ Enhanced the accuracy of search results and user experience.
+ Created and implemented new tools for data analysis and visualization.`)}
           />
+          ,
           <Details
-            position={"Software Engineer"}
-            company={"Creative Minds Graphics"}
-            companyLink={"https://creativemg.netlify.app/"}
-            time={"2022-Present"}
-            address={"4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"}
-            work={`Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.`}
+            key="creative-minds-graphics-2"
+            position="Software Engineer"
+            company="Creative Minds Graphics"
+            companyLink="https://creativemg.netlify.app/"
+            time="2022-Present"
+            address="4912 DE BRUYN STREET, CHLOORKOP, EDENVALE, 1624"
+            work={workToList(`Worked on improving features of Google's search engine.
+ Focused on increasing the relevance of search results.
+ Developed advanced data analysis tools for enhanced visualization.`)}
           />
         </ul>
       </div>
