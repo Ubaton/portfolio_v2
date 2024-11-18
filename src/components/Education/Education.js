@@ -1,3 +1,5 @@
+"use cache";
+
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "@/constant/ListIcon/LiIcon";

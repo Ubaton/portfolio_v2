@@ -1,3 +1,4 @@
+"use cache";
 import React, { useState } from "react";
 import AnimatedText from "@/components/Animated/AnimatedText";
 import DetailLayout from "@/components/DetailLayout";

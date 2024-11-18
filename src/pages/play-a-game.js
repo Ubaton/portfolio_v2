@@ -1,3 +1,5 @@
+"use cache"
+
 import React, { useState, useEffect } from "react";
 import { StarIcon } from "lucide-react";
 

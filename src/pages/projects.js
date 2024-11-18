@@ -1,3 +1,5 @@
+"use cache"
+
 import AnimatedText from "@/components/Animated/AnimatedText";
 import Layout from "@/components/Layout";
 import { GithubIcon } from "@/components/icons/icons";
